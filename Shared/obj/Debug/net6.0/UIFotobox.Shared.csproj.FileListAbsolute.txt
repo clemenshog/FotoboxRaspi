@@ -1,0 +1,12 @@
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\bin\Debug\net6.0\UIFotobox.Shared.deps.json
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\bin\Debug\net6.0\UIFotobox.Shared.dll
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\bin\Debug\net6.0\UIFotobox.Shared.pdb
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\UIFotobox.Shared.csproj.AssemblyReference.cache
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\UIFotobox.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\UIFotobox.Shared.AssemblyInfoInputs.cache
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\UIFotobox.Shared.AssemblyInfo.cs
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\UIFotobox.Shared.csproj.CoreCompileInputs.cache
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\UIFotobox.Shared.dll
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\refint\UIFotobox.Shared.dll
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\UIFotobox.Shared.pdb
+C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Shared\obj\Debug\net6.0\ref\UIFotobox.Shared.dll

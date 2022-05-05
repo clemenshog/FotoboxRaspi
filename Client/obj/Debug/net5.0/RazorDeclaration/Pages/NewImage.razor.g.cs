@@ -13,91 +13,91 @@ namespace UIFotobox.Client.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 2 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 2 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 3 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 4 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 5 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 6 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 7 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 8 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 9 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using UIFotobox.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Fotobox\UIFotobox\Client\_Imports.razor"
+#line 10 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\_Imports.razor"
 using UIFotobox.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Fotobox\UIFotobox\Client\Pages\NewImage.razor"
+#line 2 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\Pages\NewImage.razor"
 using UIFotobox.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Fotobox\UIFotobox\Client\Pages\NewImage.razor"
+#line 5 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\Pages\NewImage.razor"
 using Blazored.LocalStorage;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Fotobox\UIFotobox\Client\Pages\NewImage.razor"
+#line 7 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\Pages\NewImage.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Fotobox\UIFotobox\Client\Pages\NewImage.razor"
+#line 8 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\Pages\NewImage.razor"
 using System.IO;
 
 #line default
@@ -112,7 +112,7 @@ using System.IO;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 25 "C:\Fotobox\UIFotobox\Client\Pages\NewImage.razor"
+#line 25 "C:\Users\cleme\Desktop\Mistkubi\UIFotobox\Client\Pages\NewImage.razor"
  
 
     // Bild von Ordner auslesen

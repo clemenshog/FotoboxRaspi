@@ -1,44 +1,43 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\xelia\\.nuget\\packages\\": {},
+    "C:\\Users\\cleme\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Fotobox\\UIFotobox\\Shared\\UIFotobox.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\cleme\\Desktop\\Mistkubi\\UIFotobox\\Shared\\UIFotobox.Shared.csproj",
       "projectName": "UIFotobox.Shared",
-      "projectPath": "C:\\Fotobox\\UIFotobox\\Shared\\UIFotobox.Shared.csproj",
-      "packagesPath": "C:\\Users\\xelia\\.nuget\\packages\\",
-      "outputPath": "C:\\Fotobox\\UIFotobox\\Shared\\obj\\",
+      "projectPath": "C:\\Users\\cleme\\Desktop\\Mistkubi\\UIFotobox\\Shared\\UIFotobox.Shared.csproj",
+      "packagesPath": "C:\\Users\\cleme\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cleme\\Desktop\\Mistkubi\\UIFotobox\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\xelia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cleme\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -49,8 +48,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -66,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
