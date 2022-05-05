@@ -1,0 +1,71 @@
+﻿@page "/gallery"
+@page "/"
+
+@using UIFotobox.Shared
+@using System.IO
+@using System.Web
+@inject HttpClient client
+@*@inject NavigationManager UriHelper*@
+<h1>Gallery</h1>
+
+
+
+<div class="printButtonGallery">
+    <button class="print-buttonGallery"><span class="print-icon"></span></button>
+</div>
+
+@foreach (var img in imageList)
+{
+
+    <div class="gallery">
+        <a tabindex="1"><img src=@img @onclick="() => ClickedImage(img)" id=@img></a>
+
+
+    </div>
+
+}
+
+@functions
+{
+    int index = 0;
+
+    List<string> imageList = new List<string>();
+    string selectedImage = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        for (int i = 0; i < 10; i++)
+        {
+            string path = "/images/" + i + ".jpg";
+
+            try
+            {
+                byte[] file = await client.GetByteArrayAsync(path);
+                imageList.Add(path);
+                index++;
+            }
+            catch
+            {
+                break;
+            }
+
+        }
+    }
+
+    public void ClickedImage(string img)
+    {
+        selectedImage = img;
+    }
+
+    public void ButtonPrintClicked()
+    {
+        if (selectedImage != null)
+        {
+            // send to printer..
+
+        }
+    }
+
+
+    }

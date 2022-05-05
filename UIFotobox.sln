@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIFotobox.Server", "Server\UIFotobox.Server.csproj", "{4D017B25-2C95-4456-BD87-F947624E98C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIFotobox.Client", "Client\UIFotobox.Client.csproj", "{0E7EC6AD-5E4C-4B1D-A981-E362257E73D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIFotobox.Shared", "Shared\UIFotobox.Shared.csproj", "{E76935A5-28E6-46C8-97E8-5AE5B55184FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D017B25-2C95-4456-BD87-F947624E98C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D017B25-2C95-4456-BD87-F947624E98C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D017B25-2C95-4456-BD87-F947624E98C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D017B25-2C95-4456-BD87-F947624E98C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7EC6AD-5E4C-4B1D-A981-E362257E73D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7EC6AD-5E4C-4B1D-A981-E362257E73D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7EC6AD-5E4C-4B1D-A981-E362257E73D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7EC6AD-5E4C-4B1D-A981-E362257E73D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76935A5-28E6-46C8-97E8-5AE5B55184FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76935A5-28E6-46C8-97E8-5AE5B55184FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76935A5-28E6-46C8-97E8-5AE5B55184FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76935A5-28E6-46C8-97E8-5AE5B55184FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD6C520F-536D-4957-BF91-64B99DA7CFD0}
+	EndGlobalSection
+EndGlobal

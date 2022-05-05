@@ -1,0 +1,106 @@
+﻿@page "/newImage"
+@using UIFotobox.Shared
+@inject IJSRuntime JSRuntime
+@inject HttpClient client
+@using Blazored.LocalStorage
+@inject Blazored.LocalStorage.ILocalStorageService storage
+@using System.Net.Http
+@using System.IO
+
+
+<h1>Blazor Webcam</h1>
+<video id="videoFeed" width="320" height="240" />
+<canvas class="d-none" id="currentFrame" width="320" height="240" />
+<br />
+@*<input class="form-control mb-3" style="width:320px;" type="text" @bind="captionText" placeholder="Enter caption" />*@
+<button class="btn btn-primary mb-3" @onclick="CaptureFrame">Capture Frame</button>
+<br />
+
+@if (@frameUri != "")
+{
+    <img src="@frameUri" />
+}
+
+@code
+{
+
+    // Bild von Ordner auslesen
+    // var file2 = await client.GetByteArrayAsync("/images/0.jpg");
+    int index = 0;
+
+    string frameUri = "";
+
+    string sessionValue = "";
+
+
+    string path = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await JSRuntime.InvokeVoidAsync("startVideo", "videoFeed");
+     
+        for (int i = 0; i < 10; i++)
+        {
+            string path = "/images/" + i + ".jpg";
+
+            try
+            {
+                byte[] file = await client.GetByteArrayAsync(path);
+                
+                index++;
+            }
+            catch
+            {
+                break;
+            }
+
+        }
+    }
+
+    private async Task CaptureFrame()
+    {
+        await JSRuntime.InvokeAsync<String>("getFrame", "videoFeed", "currentFrame", DotNetObjectReference.Create(this));
+    }
+
+
+    [JSInvokable]
+    public void ProcessImage(string imageString)
+    {
+        string path = imageString.Substring(0, imageString.Length - 22);
+       
+        frameUri = imageString;
+       
+
+    }
+
+   #region Browser local Storage
+    public async Task SetItem(string imageString)
+    {
+
+        //await storage.SetItemAsync(index.ToString(), imageString);
+        string text = File.ReadAllText("/Fotobox/repaired.txt");
+        string sub = imageString.Substring(23, imageString.Length - 23);
+        var data = Convert.FromBase64String(sub);
+
+        File.WriteAllBytes(@"\images\10.jpeg", data);
+
+
+        index++;
+        GetItem();
+
+    }
+
+
+
+    public async void GetItem()
+    {
+        var item = await storage.GetItemAsync<string>(index.ToString());
+
+    }
+    #endregion
+
+}
+
+
+
+

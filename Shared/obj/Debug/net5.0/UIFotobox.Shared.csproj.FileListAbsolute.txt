@@ -1,0 +1,11 @@
+C:\Fotobox\UIFotobox\Shared\bin\Debug\net5.0\UIFotobox.Shared.deps.json
+C:\Fotobox\UIFotobox\Shared\bin\Debug\net5.0\UIFotobox.Shared.dll
+C:\Fotobox\UIFotobox\Shared\bin\Debug\net5.0\ref\UIFotobox.Shared.dll
+C:\Fotobox\UIFotobox\Shared\bin\Debug\net5.0\UIFotobox.Shared.pdb
+C:\Fotobox\UIFotobox\Shared\obj\Debug\net5.0\UIFotobox.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fotobox\UIFotobox\Shared\obj\Debug\net5.0\UIFotobox.Shared.AssemblyInfoInputs.cache
+C:\Fotobox\UIFotobox\Shared\obj\Debug\net5.0\UIFotobox.Shared.AssemblyInfo.cs
+C:\Fotobox\UIFotobox\Shared\obj\Debug\net5.0\UIFotobox.Shared.csproj.CoreCompileInputs.cache
+C:\Fotobox\UIFotobox\Shared\obj\Debug\net5.0\UIFotobox.Shared.dll
+C:\Fotobox\UIFotobox\Shared\obj\Debug\net5.0\ref\UIFotobox.Shared.dll
+C:\Fotobox\UIFotobox\Shared\obj\Debug\net5.0\UIFotobox.Shared.pdb

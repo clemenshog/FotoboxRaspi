@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>UIFotobox</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="UIFotobox.Client.styles.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+</head>
+
+<body>
+    <div id="app">Loading...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+    <script>
+        function startVideo(src) {
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true }).then(function (stream) {
+                    let video = document.getElementById(src);
+                    if ("srcObject" in video) {
+                        video.srcObject = stream;
+                    } else {
+                        video.src = window.URL.createObjectURL(stream);
+                    }
+                    video.onloadedmetadata = function (e) {
+                        video.play();
+                    };
+                    //mirror image
+                    video.style.webkitTransform = "scaleX(-1)";
+                    video.style.transform = "scaleX(-1)";
+                });
+            }
+        }
+
+        function getFrame(src, dest, dotNetHelper) {
+            let video = document.getElementById(src);
+            let canvas = document.getElementById(dest);
+            canvas.getContext('2d').drawImage(video, 0, 0, 320, 240);
+
+            let dataUrl = canvas.toDataURL("image/jpeg");
+            //var base64 = dataURL.split('base64,')[1];
+            //var parseFile = new Parse.File(name, { base64: base64 });
+            downloadURI(dataUrl, "10.jpg");
+            dotNetHelper.invokeMethodAsync('ProcessImage', dataUrl);
+        }
+        function downloadURI(uri, name) {
+            var link = document.createElement("a");
+            link.download = name;
+            link.href = uri;
+            link.fil
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            delete link;
+        }
+        async function downloadFileFromStream(fileName, contentStreamReference) {
+            const arrayBuffer = await contentStreamReference.arrayBuffer();
+            const blob = new Blob([arrayBuffer]);
+            const url = URL.createObjectURL(blob);
+
+            triggerFileDownload(fileName, url);
+
+            URL.revokeObjectURL(url);
+        }
+
+
+    </script>
+</body>
+
+</html>
